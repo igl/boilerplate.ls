@@ -1,6 +1,6 @@
 {
   "name": "boilerplate.ls",
-  "version": "0.0.3",
+  "version": "0.0.1",
   "author": "Richard Keil",
   "main": "./build/api/index.js",
   "scripts": {
