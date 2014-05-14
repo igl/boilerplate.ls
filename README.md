@@ -16,7 +16,6 @@ Written
 
 defaults to: package.json.main: /build/api/index.js
 <br>
-<br>
 or for development:
 
     make <install>
@@ -33,14 +32,14 @@ or for development:
 
 ---
 
-### make `[ all install build run test clean ]`
+### make `[ all install build run test watch watch-test clean ]`
 
 make install
 - npm install
 - make clean build
 
 make build
-- compiles **all** source files
+- compiles all source files
 
 make run
 - make build
@@ -52,8 +51,3 @@ make test
 
 make clean
 - removes `./build`
-
-
-Todo:
-
-- make watch
