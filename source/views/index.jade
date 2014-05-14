@@ -1,0 +1,132 @@
+extends layout
+
+append head
+    title='Example Site'
+
+append body
+    div.navbar.navbar-default.navbar-fixed-top(role='navigation')
+        div.container
+            div.navbar-header
+                button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-ex1-collapse')
+                    span.sr-only= 'Toggle navigation'
+                    span.icon-bar
+                    span.icon-bar
+                    span.icon-bar
+                a.navbar-brand(href='javascript:;')
+                    = 'Bootstrap.ls'
+
+            div.collapse.navbar-collapse.navbar-right.navbar-ex1-collapse
+                ul.nav.navbar-nav
+                    li: a(href='#about')
+                        = 'About'
+                    li: a(href='#services')
+                        = 'Services'
+                    li: a(href='#blog')
+                        = 'Blog'
+                    li: a(href='#contact')
+                        = 'Contact'
+
+    div.intro-header
+        div.container
+            div.row
+                div.col-lg-12
+                    div.intro-message
+                        h1
+                            img(src='/img/boilerplate-logo.png', alt="Boilerplate.ls", title="Boilerplate.ls")
+                        hr.intro-divider
+                        ul.list-inline.intro-social-buttons
+                            li: a.btn.btn-default.btn-lg(href='javascript:;')
+                                i.fa.fa-pencil.fa-fw
+                                span= 'Register'
+                            li: a.btn.btn-default.btn-lg(href='javascript:;')
+                                i.fa.fa-sign-in.fa-fw
+                                span= 'Login'
+                            li: a.btn.btn-default.btn-lg(href='javascript:;')
+                                i.fa.fa-money.fa-fw
+                                span= 'Pricing'
+
+    <!-- /.intro-header -->
+    div.content-section-a
+        div.container
+            div.row
+                div.col-lg-5.col-sm-6
+                    hr.section-heading-spacer
+                    div.clearfix
+                    h2.section-heading
+                        = 'First Box'
+                    p.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Suspendisse mattis metus augue, quis condimentum nulla tempus a. Donec lacinia,
+
+                div.col-lg-5.col-lg-offset-2.col-sm-6
+                    img.img-responsive(src='img/tablet.png')
+
+    div.content-section-b
+        div.container
+            div.row
+                div.col-lg-5.col-lg-offset-1.col-sm-push-6.col-sm-6
+                    hr.section-heading-spacer
+                    div.clearfix
+                    h2.section-heading
+                        != 'Diri diri du dödel du.'
+                div.col-lg-5.col-sm-pull-6.col-sm-6
+                    img.img-responsive(src='img/desktop.png')
+
+    div.banner
+        div.container
+            div.row
+                div.col-lg-6
+                    h2= 'Connect to us'
+                div.col-lg-6
+                    ul.list-inline
+                        li: a.btn.btn-default.btn-lg(href='javascript:;')
+                            i.fa.fa-twitter.fa-fw
+                            span
+                                = 'Twitter'
+                        li: a.btn.btn-default.btn-lg(href='javascript:;')
+                            i.fa.fa-github.fa-fw
+                            span
+                                = 'Github'
+                        li: a.btn.btn-default.btn-lg(href='javascript:;')
+                            i.fa.fa-linkedin.fa-fw
+                            span
+                                = 'Linkedin'
+
+    div.content-section-a
+        div.container
+            div.row
+                div.col-lg-5.col-sm-6
+                    hr.section-heading-spacer
+                    div.clearfix
+                    h2.section-heading
+                        = 'Du dödel di!'
+                    p.
+                        Du dödel du ist zweites futur bei Sonnenaufgang.
+                        lectus at tempus euismod, turpis odio tempor dui, sed eleifend ante justo et turpis.
+                div.col-lg-5.col-lg-offset-2.col-sm-6
+                    img.img-responsive(src='img/phone.png')
+
+
+    footer
+        div.container
+            div.row
+                div.col-lg-12
+                    ul.list-inline
+                        li: a(href='#home')
+                            = 'Home'
+                        li.footer-menu-divider
+                            != '&sdot;'
+                        li: a(href='#about')
+                            = 'About'
+                        li.footer-menu-divider
+                            != '&sdot;'
+                        li: a(href='#services')
+                            = 'Services'
+                        li.footer-menu-divider
+                            != '&sdot;'
+                        li: a(href='#blog')
+                            = 'Blog'
+                        li: a(href='#contact')
+                            = 'Contact'
+                    p.copyright.text-muted.small
+                        != 'Copyright &copy; Richard Keil 2014. <br>All Rights Reserved'
